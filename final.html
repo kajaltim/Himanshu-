@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Forever ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(180deg,#050816,#111827);
+color:white;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+}
+
+.container{
+max-width:850px;
+padding:30px;
+z-index:2;
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:70px;
+color:#FFD700;
+margin-bottom:20px;
+}
+
+p{
+font-size:22px;
+line-height:1.9;
+}
+
+button{
+margin-top:35px;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+font-size:18px;
+background:#ff4f87;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.heart{
+position:fixed;
+bottom:-50px;
+font-size:25px;
+animation:float 8s linear infinite;
+opacity:.8;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+
+}
+
+#finalMessage{
+display:none;
+margin-top:40px;
+animation:fade 2s;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Forever & Always ❤️</h1>
+
+<p>
+
+Dear Himanshu,
+
+If you've reached this page...
+
+Thank you for reading every word.
+
+Thank you for being the most beautiful part of my life.
+
+Even when we're far apart...
+
+My heart has always been with you.
+
+I still remember London...
+
+I still remember every smile...
+
+Every laugh...
+
+Every little moment.
+
+One day...
+
+Distance will disappear.
+
+And I'll finally hug you again.
+
+Until then...
+
+Please remember one thing...
+
+No matter what happens...
+
+I'll always choose you.
+
+❤️
+
+Forever Yours,
+
+Kajal
+
+</p>
+
+<button onclick="showLove()">
+
+One Last Surprise ❤️
+
+</button>
+
+<div id="finalMessage">
+
+<h2 style="margin-top:30px;color:#FFD700;">
+
+I Love You More Than Words Can Ever Say ❤️
+
+</h2>
+
+<p style="margin-top:20px;">
+
+See you soon...
+
+Our next chapter is waiting.
+
+🇮🇳 ❤️ ✈️ ❤️ 🇬🇧
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function showLove(){
+
+document.getElementById("finalMessage").style.display="block";
+
+}
+
+for(let i=0;i<50;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDelay=Math.random()*8+"s";
+
+heart.style.fontSize=(20+Math.random()*25)+"px";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>
