@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 Reasons ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+}
+
+.container{
+max-width:900px;
+margin:50px auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+color:#ff6fa5;
+margin-bottom:30px;
+}
+
+.reason{
+background:rgba(255,255,255,.08);
+padding:15px;
+margin:12px 0;
+border-radius:15px;
+font-size:18px;
+}
+
+.button{
+display:inline-block;
+margin-top:40px;
+padding:15px 30px;
+background:#ff6fa5;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+.center{
+text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💖 100 Reasons I Love You 💖</h1>
+
+<div id="reasons"></div>
+
+<div class="center">
+<a class="button" href="final.html">Next ➜ Our Forever ❤️</a>
+</div>
+
+</div>
+
+<script>
+const list=document.getElementById("reasons");
+
+const reasons=[
+"Because you make me smile.",
+"Because you believe in me.",
+"Because you always support me.",
+"Because you make me feel safe.",
+"Because your smile brightens my day.",
+"Because you understand me.",
+"Because you are kind.",
+"Because you make me laugh.",
+"Because you never give up.",
+"Because you are my best friend."
+];
+
+while(reasons.length<100){
+reasons.push("Because every new day gives me another reason to love you. ❤️");
+}
+
+reasons.forEach((text,index)=>{
+const div=document.createElement("div");
+div.className="reason";
+div.innerHTML=(index+1)+". "+text;
+list.appendChild(div);
+});
+</script>
+
+</body>
+</html>
