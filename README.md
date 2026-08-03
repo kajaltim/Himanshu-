@@ -1,2 +1,2 @@
 # Himanshu-
-Private surprise website
+Public surprise website
